@@ -41,11 +41,18 @@ G0. Проверка функций анализа последовательн�
 |   Закрыта: тестами на мутанты. Попыток: 1.
 |
 |-- G7. Проверка на ошибке, внесенной в настоящий код
-    Метод: в ветке bug/gc-only-g функция gc_content считает только G.
-    Результат: «до» (ветка): 3 failed, 36 passed, упали test_p3_gc_bounds,
-    test_p3b_gc_strand_invariant, test_oracle_biopython
-    (results/caught_error_before.txt); «после» (main): 39 passed
-    (results/caught_error_after.txt).
-    Закрыта: тестами. Попыток: 1.
-
-Итог: все 7  подцелей закрыты. Полный набор: 39 passed на профиле default и на explore с seed 0, 1, 2; семь мутантов пойманы на каждом из 10 seed (results/run_log.txt).
+|   Метод: в ветке bug/gc-only-g функция gc_content считает только G.
+|   Результат: «до» (ветка): 3 failed, 36 passed, упали test_p3_gc_bounds,
+|   test_p3b_gc_strand_invariant, test_oracle_biopython
+|   (results/caught_error_before.txt); «после» (main): 39 passed
+|   (results/caught_error_after.txt).
+|   Закрыта: тестами. Попыток: 1.
+|
+|-- G8. Проверка силы проверки на реальном коде (пробелы в свойствах)
+|   Метод: внесение 7 ошибок в src/seqstats.py (scripts/mutate.py).
+|   Результат: исходные свойства пропускали 6 из 7 ошибок (revcomp без разворота,
+|   normalize без регистра и цифр, min_len, минус-цепь ORF). Добавлены известные
+|   значения и тесты обеих цепей (checks/test_known.py); теперь ловятся все 7
+|   (results/mutation_extra.txt).
+|   Закрыта: тестами и мутациями. Попыток: 3.
+Итог: все 8  подцелей закрыты. Полный набор: 39 passed на профиле default и на explore с seed 0, 1, 2; семь мутантов пойманы на каждом из 10 seed (results/run_log.txt).
