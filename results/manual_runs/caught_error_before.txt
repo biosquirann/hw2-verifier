@@ -1,0 +1,7 @@
+Проверка P3b на ошибочной реализации gc_only_g
+Последовательность: GGAA
+GC ошибочной функции: 0.5
+GC обратного комплемента: 0.0
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+AssertionError: P3b обнаружил ошибку: GC изменилось после обратного комплемента
