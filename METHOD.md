@@ -91,7 +91,7 @@
 | 2. Свойства и Biopython | `python -m pytest checks -q` | все тесты зелёные на профиле `default` |
 | 3. Мутанты | `python -m pytest checks -q -k mutant` | все семь исходных мутантов пойманы |
 | 4. Повторы | `HYPOTHESIS_PROFILE=explore python -m pytest checks -q --hypothesis-seed=N`, N = 0, 1, 2 | все три запуска зеленые |
-| 5. Повторная проверка мутантов | семь исходных мутантов проверены на seed 0–9 профиля explore | все мутанты пойманы на каждом seed (`results/run_log.txt`) |
+| 5. Повторная проверка мутантов | семь исходных мутантов проверены на seed 0–9 профиля explore | все мутанты пойманы на каждом seed (`results/mutants_explore_seeds.txt`) |
 | 6. Внесенная ошибка | ветка с ошибкой в `gc_content`, `python -m pytest checks -q` | до исправления: 3 failed, 42 passed; после исправления: 45 passed |
 | 7. Дополнительные мутации | `scripts/mutate.py` | все семь дополнительных ошибок обнаружены (`results/mutation_extra.txt`) |
 
