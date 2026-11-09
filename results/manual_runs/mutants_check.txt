@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.8, pytest-9.2.0, pluggy-1.7.0 -- /Users/annapopova/my_project/.venv/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=None, deadline=None, max_examples=200, derandomize=True
+rootdir: /Users/annapopova/my_project
+plugins: hypothesis-6.170.15
+collecting ... collected 16 items
+
+checks/test_props.py::test_p1_composition_sum PASSED                     [  6%]
+checks/test_props.py::test_p2_composition_order_invariant PASSED         [ 12%]
+checks/test_props.py::test_p3_gc_bounds PASSED                           [ 18%]
+checks/test_props.py::test_p3b_gc_strand_invariant PASSED                [ 25%]
+checks/test_props.py::test_p4_revcomp_involution PASSED                  [ 31%]
+checks/test_props.py::test_p5_normalize_idempotent PASSED                [ 37%]
+checks/test_props.py::test_p6_orfs_wellformed PASSED                     [ 43%]
+checks/test_props.py::test_p7_planted_orf_found PASSED                   [ 50%]
+checks/test_props.py::test_oracle_biopython PASSED                       [ 56%]
+checks/test_props.py::test_mutant_p1_caught PASSED                       [ 62%]
+checks/test_props.py::test_mutant_p2_caught PASSED                       [ 68%]
+checks/test_props.py::test_mutant_p3_caught PASSED                       [ 75%]
+checks/test_props.py::test_mutant_p4_caught PASSED                       [ 81%]
+checks/test_props.py::test_mutant_p5_caught PASSED                       [ 87%]
+checks/test_props.py::test_mutant_p6_caught PASSED                       [ 93%]
+checks/test_props.py::test_mutant_p7_caught PASSED                       [100%]
+
+============================== 16 passed in 0.96s ==============================

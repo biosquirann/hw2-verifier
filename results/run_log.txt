@@ -1,0 +1,42 @@
+== default
+.......................................                                  [100%]
+39 passed in 0.95s
+== explore seed 0
+.......................................                                  [100%]
+39 passed in 1.15s
+== explore seed 1
+.......................................                                  [100%]
+39 passed in 1.14s
+== explore seed 2
+.......................................                                  [100%]
+39 passed in 1.18s
+== mutants seed 0
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.44s
+== mutants seed 1
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.45s
+== mutants seed 2
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.44s
+== mutants seed 3
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.43s
+== mutants seed 4
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.43s
+== mutants seed 5
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.43s
+== mutants seed 6
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.46s
+== mutants seed 7
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.44s
+== mutants seed 8
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.43s
+== mutants seed 9
+.......                                                                  [100%]
+7 passed, 32 deselected in 0.44s
