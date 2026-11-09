@@ -29,7 +29,7 @@ def aa_composition(seq):
 
 
 def gc_content(seq):
-    return (seq.count("G") + seq.count("C")) / len(seq)
+    return seq.count("G") / len(seq)
 
 
 def revcomp(seq):
