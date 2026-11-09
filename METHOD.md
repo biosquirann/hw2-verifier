@@ -115,7 +115,6 @@
 
 | Дата | Что было не так | Чем поймано | Как исправлено | Команда «до» и «после» |
 |---|---|---|---|---|
-
----
+| 2026-11-09 | Внесенная ошибка: `gc_content` считает только G (`seq.count("G") / len(seq)`) | `test_p3_gc_bounds`, `test_p3b_gc_strand_invariant`, `test_oracle_biopython` | Ошибка существует только на ветке `bug/gc-only-g`; в `main` код правильный: `(seq.count("G") + seq.count("C")) / len(seq)` | «До»: `git switch bug/gc-only-g && python -m pytest checks -q` → 3 failed, 36 passed (`results/caught_error_before.txt`). «После»: `git switch main && python -m pytest checks -q` → 39 passed (`results/caught_error_after.txt`) |
 
 Текст методики — [написано] автором; структура по шаблону недели 6 — [порождено: Claude Sonnet 5.5], содержание проверено автором.
