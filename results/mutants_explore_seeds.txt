@@ -1,0 +1,30 @@
+== mutants, профиль explore, seed 0
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.44s
+== mutants, профиль explore, seed 1
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.43s
+== mutants, профиль explore, seed 2
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.43s
+== mutants, профиль explore, seed 3
+.......                                                                  [100%]
+7 passed, 38 deselected in 1.17s
+== mutants, профиль explore, seed 4
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.48s
+== mutants, профиль explore, seed 5
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.63s
+== mutants, профиль explore, seed 6
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.50s
+== mutants, профиль explore, seed 7
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.43s
+== mutants, профиль explore, seed 8
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.43s
+== mutants, профиль explore, seed 9
+.......                                                                  [100%]
+7 passed, 38 deselected in 0.44s

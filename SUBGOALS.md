@@ -37,14 +37,14 @@ G0. Проверка функций анализа последовательн�
 |-- G6. Проверка способности тестов обнаруживать ошибки
 |   Метод: проверка семи искусственно измененных реализаций (мутантов).
 |   Результат: все 7 мутантов были обнаружены соответствующими тестами
-|   на каждом из 10 seed (results/run_log.txt).
+|   на каждом из 10 seed профиля explore (results/mutants_explore_seeds.txt).
 |   Закрыта: тестами на мутанты. Попыток: 1.
 |
 |-- G7. Проверка на ошибке, внесенной в настоящий код
 |   Метод: в ветке bug/gc-only-g функция gc_content считает только G.
-|   Результат: «до» (ветка): 3 failed, 36 passed, упали test_p3_gc_bounds,
+|   Результат: «до» (ветка): 3 failed, 42 passed, упали test_p3_gc_bounds,
 |   test_p3b_gc_strand_invariant, test_oracle_biopython
-|   (results/caught_error_before.txt); «после» (main): 39 passed
+|   (results/caught_error_before.txt); «после» (main): 45 passed
 |   (results/caught_error_after.txt).
 |   Закрыта: тестами. Попыток: 1.
 |
@@ -55,4 +55,4 @@ G0. Проверка функций анализа последовательн�
 |   значения и тесты обеих цепей (checks/test_known.py); теперь ловятся все 7
 |   (results/mutation_extra.txt).
 |   Закрыта: тестами и мутациями. Попыток: 3.
-Итог: все 8  подцелей закрыты. Полный набор: 39 passed на профиле default и на explore с seed 0, 1, 2; семь мутантов пойманы на каждом из 10 seed (results/run_log.txt).
+Итог: все 8  подцелей закрыты. Полный набор: 45 passed на профиле default и на explore с seed 0, 1, 2; семь мутантов пойманы на каждом из 10 seed профиля explore (results/mutants_explore_seeds.txt).
