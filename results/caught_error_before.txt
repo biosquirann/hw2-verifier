@@ -1,4 +1,4 @@
-...........FF....F.....................                                  [100%]
+.................FF....F.....................                            [100%]
 =================================== FAILURES ===================================
 ______________________________ test_p3_gc_bounds _______________________________
 
@@ -13,13 +13,13 @@ checks/test_props.py:72: in test_p3_gc_bounds
                               ^^^^^^^^^^^^^^^^^^^
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-gc = <function gc_content at 0x1044f4ea0>, d = 'AAA'
+gc = <function gc_content at 0x106f38f40>, d = 'AAA'
 
     def p3(gc, d):                        # физические границы доли
 >       assert 0 <= gc(d) <= 1 and gc("GC" * 3) == 1 and gc("AT" * 3) == 0
 E       AssertionError: assert (0.0 <= 1 and 0.5 == 1)
-E        +  where 0.0 = <function gc_content at 0x1044f4ea0>('AAA')
-E        +  and   0.5 = <function gc_content at 0x1044f4ea0>(('GC' * 3))
+E        +  where 0.0 = <function gc_content at 0x106f38f40>('AAA')
+E        +  and   0.5 = <function gc_content at 0x106f38f40>(('GC' * 3))
 E       Failing test case: test_p3_gc_bounds(
 E           d='AAA',  # or any other generated value
 E       )
@@ -38,15 +38,15 @@ checks/test_props.py:75: in test_p3b_gc_strand_invariant
                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-gc = <function gc_content at 0x1044f4ea0>
-rc = <function revcomp at 0x1044f4f40>, d = 'AAC'
+gc = <function gc_content at 0x106f38f40>
+rc = <function revcomp at 0x106f38fe0>, d = 'AAC'
 
     def p3b(gc, rc, d):                   # GC не зависит от цепи
 >       assert gc(rc(d)) == gc(d)
 E       AssertionError: assert 0.3333333333333333 == 0.0
-E        +  where 0.3333333333333333 = <function gc_content at 0x1044f4ea0>('GTT')
-E        +    where 'GTT' = <function revcomp at 0x1044f4f40>('AAC')
-E        +  and   0.0 = <function gc_content at 0x1044f4ea0>('AAC')
+E        +  where 0.3333333333333333 = <function gc_content at 0x106f38f40>('GTT')
+E        +    where 'GTT' = <function revcomp at 0x106f38fe0>('AAC')
+E        +  and   0.0 = <function gc_content at 0x106f38f40>('AAC')
 E       Failing test case: test_p3b_gc_strand_invariant(
 E           d='AAC',
 E       )
@@ -69,8 +69,8 @@ p = 'A', d = 'AAC'
 >       assert abs(S.gc_content(d) - gc_fraction(d)) < 1e-12
 E       AssertionError: assert 0.3333333333333333 < 1e-12
 E        +  where 0.3333333333333333 = abs((0.0 - 0.3333333333333333))
-E        +    where 0.0 = <function gc_content at 0x1044f4ea0>('AAC')
-E        +      where <function gc_content at 0x1044f4ea0> = S.gc_content
+E        +    where 0.0 = <function gc_content at 0x106f38f40>('AAC')
+E        +      where <function gc_content at 0x106f38f40> = S.gc_content
 E        +    and   0.3333333333333333 = gc_fraction('AAC')
 E       Failing test case: test_oracle_biopython(
 E           p='A',  # or any other generated value
@@ -82,5 +82,5 @@ checks/test_props.py:92: AssertionError
 FAILED checks/test_props.py::test_p3_gc_bounds - AssertionError: assert (0.0 ...
 FAILED checks/test_props.py::test_p3b_gc_strand_invariant - AssertionError: a...
 FAILED checks/test_props.py::test_oracle_biopython - AssertionError: assert 0...
-3 failed, 36 passed in 1.15s
+3 failed, 42 passed in 1.16s
 exit code: 1
